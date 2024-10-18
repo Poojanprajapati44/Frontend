@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: auto;
+            width: 100%;
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .main1 {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .div1 {
+            height: 250px;
+            width: 330px;
+            /* border: 2px solid red; */
+            margin: 30px;
+        }
+
+        .div1 .part1 {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+        }
+
+        .div1 .part2 {
+            height: 50%;
+            width: 100%;
+            border: 1px solid;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .div1 .part2 .btn {
+            display: flex;
+            width: 200px;
+        }
+
+        .div1 .part2 .btn .btn1 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div1 .part2 .btn .btn2 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div2 {
+            height: 250px;
+            width: 330px;
+            /* border: 2px solid blue; */
+            margin: 30px;
+        }
+
+        .div2 .part1 {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+        }
+
+        .div2 .part2 {
+            height: 50%;
+            width: 100%;
+            border: 1px solid;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .div2 .part2 .btn {
+            display: flex;
+            width: 200px;
+        }
+
+        .div2 .part2 .btn .btn1 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div2 .part2 .btn .btn2 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div3 {
+            height: 250px;
+            width: 330px;
+            /* border: 2px solid blue; */
+            margin: 30px;
+        }
+
+        .div3 .part1 {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+        }
+
+        .div3 .part2 {
+            height: 50%;
+            width: 100%;
+            border: 1px solid;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .div3 .part2 .btn {
+            display: flex;
+            width: 200px;
+        }
+
+        .div3 .part2 .btn .btn1 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div3 .part2 .btn .btn2 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .main2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .div4 {
+            height: 250px;
+            width: 330px;
+            /* border: 2px solid blue; */
+            margin: 30px;
+        }
+
+        .div4 .part1 {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+        }
+
+        .div4 .part2 {
+            height: 50%;
+            width: 100%;
+            border: 1px solid;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .div4 .part2 .btn {
+            display: flex;
+            width: 200px;
+        }
+
+        .div4 .part2 .btn .btn1 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div4 .part2 .btn .btn2 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div5 {
+            height: 250px;
+            width: 330px;
+            /* border: 2px solid blue; */
+            margin: 30px;
+        }
+
+        .div5 .part1 {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+        }
+
+        .div5 .part2 {
+            height: 50%;
+            width: 100%;
+            border: 1px solid;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .div5 .part2 .btn {
+            display: flex;
+            width: 200px;
+        }
+
+        .div5 .part2 .btn .btn1 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div5 .part2 .btn .btn2 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div6 {
+            height: 250px;
+            width: 330px;
+            /* border: 2px solid blue; */
+            margin: 30px;
+        }
+
+        .div6 .part1 {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+        }
+
+        .div6 .part2 {
+            height: 50%;
+            width: 100%;
+            border: 1px solid;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .div6 .part2 .btn {
+            display: flex;
+            width: 200px;
+        }
+
+        .div6 .part2 .btn .btn1 {
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .div6 .part2 .btn .btn2 {
+            border: 2px solid;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main1">
+            <div class="div1">
+                <div class="part1">
+                    <div>Thumbnail</div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis quidem facilis
+                            obcaecati? Neque consequuntur.</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn1">view</div>
+                        <div class="btn2">Edit</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div2">
+                <div class="part1">
+                    <div>Thumbnail</div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis quidem facilis
+                            obcaecati? Neque consequuntur.</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn1">view</div>
+                        <div class="btn2">Edit</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div3">
+                <div class="part1">
+                    <div>Thumbnail</div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis quidem facilis
+                            obcaecati? Neque consequuntur.</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn1">view</div>
+                        <div class="btn2">Edit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main2">
+            <div class="div4">
+                <div class="part1">
+                    <div>Thumbnail</div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis quidem facilis
+                            obcaecati? Neque consequuntur.</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn1">view</div>
+                        <div class="btn2">Edit</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div5">
+                <div class="part1">
+                    <div>Thumbnail</div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis quidem facilis
+                            obcaecati? Neque consequuntur.</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn1">view</div>
+                        <div class="btn2">Edit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div6">
+                <div class="part1">
+                    <div>Thumbnail</div>
+                </div>
+                <div class="part2">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis quidem facilis
+                            obcaecati? Neque consequuntur.</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn1">view</div>
+                        <div class="btn2">Edit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
