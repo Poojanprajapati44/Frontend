@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Header</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General header styles */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 5px 0;
+        }
+        
+        /* Top navigation links */
+        .header .top-nav a {
+            color: #ccc;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        
+        /* Main navigation area */
+        .main-nav {
+            background-color: #444;
+            padding: 2px 20px;
+            color: white;
+        }
+        
+        /* Logo section */
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Logo image */
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        /* Nav tabs styles */
+        .nav-tabs .nav-link {
+            color: black;
+            background-color: #eee;
+            border: none;
+            margin-right: 5px;
+            padding: 10px 15px;
+        }
+        
+        /* Active tab style */
+        .nav-tabs .nav-link.active {
+            background-color: #f90;
+            color: white;   
+        }
+        
+        /* Search box styling */
+        .search-box input[type="text"] {
+            border: none;
+            padding: 5px;
+            border-radius: 20px;
+            width: 200px;
+        }
+        
+        .search-box .search-icon {
+            position: relative;
+            /* top: 3px; */
+            left: -30px;
+            color: purple;
+            font-size: 1.2em;
+        }
+
+         /* Background gradient for the main content */
+         .content-section {
+            background: linear-gradient(to right, #ff7e29, #ff3e00);
+            padding: 20px;
+            color: white;
+            /* width: 100%; */
+        }
+
+        /* Styling for "More Services" box */
+        .more-services {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            color: #79d026;
+            font-weight: bold;
+        }
+
+        .more-services input{
+            margin-right: 10px;
+        }
+
+        .more-services h5 {
+            color: #79d026;
+            font-weight: bold;
+        }
+
+        .more-services p {
+            color: #ddd;
+            font-size: 0.9em;
+        }
+
+        /* Styling for "Featured Content" */
+        .featured-content h3 {
+            color: #fdd200;
+            font-weight: bold;
+        }
+
+        .featured-content p {
+            color: white;
+            font-size: 0.95em;
+        }
+
+        .read-more {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .row{
+            display: flex;
+            gap: 80px;
+        }
+
+         /* Right column background gradient */
+         .latest-projects {
+            background: linear-gradient(to right, #ff7e29, #ff3e00);
+            color: white;
+            /* padding: 20px; */
+            border-radius: 5px;
+        }
+
+        /* Section headings */
+        .welcome-title {
+            font-style: italic;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .latest-projects h5 {
+            font-style: italic;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Project items */
+        .project-item {
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            padding: 10px;
+            /* margin-bottom: 10px; */
+            border-radius: 5px;
+            color: rgb(22, 2, 2);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .project-item input{
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+
+        .project-item h6 {
+            font-weight: bold;
+            color: #fdd200;
+        }
+
+        .project-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .row1{
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #aaa;
+            padding: 20px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+        .footer a {
+            color: #aaa;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .section-title {
+            font-weight: bold;
+        }
+        .footer .activities {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+    <div class="container header">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col text-right top-nav">
+                    <a href="#">Home</a> |
+                    <a href="#">About us</a> |
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main nav area -->
+    <div class="container main-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div class="logo mt-3">
+                <img src="https://www.recycling.com/wp-content/uploads/2016/06/recycling-symbol-icon-solid-dark-green.png" alt="Logo">
+                <span>Company <span style="color: #6fbf3f;">Name</span></span>
+            </div>
+            
+            <!-- Search box -->
+            <div class="search-box">
+                <input type="text" placeholder="search.....">
+                <span class="search-icon">&#128269;</span>
+            </div>
+        </div>
+        
+        <!-- Navigation tabs -->
+        <ul class="nav nav-tabs mt-3 ml-5  d-flex justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Web Layouts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Logo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Banner</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Flyer</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container content-section ">
+        <div class="row">
+            <!-- Left column: More Services -->
+            <div class="col-md-3 more-services  ">
+                <input type="checkbox" name="" id="">More Services  
+                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".</p>
+            </div>
+
+            <!-- Right column: Featured Content -->
+            <div class="col-md-7">
+                <h3>Featured Content Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis placeat ad id dolorum aspernatur, veniam impedit quasi ut minima sit, repellat ducimus error magni sequi dolores eos ipsum molestias! Dolorum unde odit provident fugit aperiam excepturi ducimus molestias enim in adipisci iusto perspiciatis voluptatum placeat, a praesentium quae minima ea. Officia, velit iusto voluptas vitae et expedita veniam. Sit!</p>
+                <a href="#" class="read-more">Read more....</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row1">
+            <!-- Left column: Welcome and content -->
+            <div class="col-md-8">
+                <h2 class="welcome-title mb-5">Welcome to our site...</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus</p>
+            </div>
+    
+            <!-- Right column: Latest Projects -->
+            <div class="col-md-4 latest-projects">
+                <h5>Latest Projects</h5>
+    
+                <div class="project-item">
+                    <input type="checkbox" name="" id="">Modern web 2.0 styled web Template.
+                    <img src="C:\Users\pooja\OneDrive\Pictures\Screenshots\Screenshot 2024-11-03 214419.png" alt="Project Image">
+                </div>
+    
+                <div class="project-item">
+                    <input type="checkbox" name="" id="">Banner Design  
+                    <img src="C:\Users\pooja\OneDrive\Pictures\Screenshots\Screenshot 2024-11-03 214255.png" alt="Banner Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<div class="container footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">Pages :
+                <a href="#">Home</a> .
+                <a href="#">About us</a> .
+                <a href="#">Contact us</a>
+                </div>  
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-12 activities">
+                <span class="section-title">Our Activities :</span> Web template, Web graphics, Logo, Banner, Flyer, Brochure etc designing.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <p>Copyright 2010 by Ariful Tonu, All rights reserved.<br>Design a modern web 2.0 styled web layout.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
