@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2{
+            color: red;
+            text-align: center;
+        }
+        #registrationForm div{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        } 
+
+        #registrationForm div label{
+            margin-right: 20px;
+        }
+
+        #registrationForm div:nth-child(3) label{
+            margin-right: 59px;
+        }
+
+        #registrationForm div:nth-child(4) label{
+            margin-right: 51px;
+        }
+
+        #registrationForm div:nth-child(5) label{
+            margin-right: 41px;
+        }
+
+        #registrationForm div:nth-child(6) label{
+            margin-right: 7px;
+        }
+
+        #registrationForm div:nth-child(7) label{
+            margin-right: 38px;
+        }
+
+        #registrationForm div:nth-child(8) label{
+            margin-right: 72px;
+        }
+
+        #registrationForm div:nth-child(9) label{
+            margin-right: 35px;
+        }
+
+        #registrationForm div:nth-child(10) label{
+            margin-right: 62px;
+        }
+
+        #registrationForm div:nth-child(11) label{
+            margin-right: 5px;
+        }
+
+        #registrationForm div:nth-child(13) label{
+            margin-right: 28px;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 60%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .form-group .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .form-group .checkbox-group input {
+            margin-right: 5px;
+        }
+        .btn {
+            display: block;
+            width: 8%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:disabled {
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container-fluid">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Enter your first name" required minlength="3" maxlength="6">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Enter your last name" required minlength="3" maxlength="10">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="It should contain @..." required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" placeholder="Only 10 digits are allowed" required maxlength="10">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="10" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+            </div>
+            <div class="form-group">
+                <label for="pin">Area PIN:</label>
+                <input type="text" id="pin" required maxlength="6">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" required>
+            </div>
+            <div class="form-group">
+                <label for="qualification">Qualification:</label>
+                <select id="qualification" required>
+                    <option value="">Select Qualification</option>
+                    <option value="bachelors">Bachelors</option>
+                    <option value="masters">Masters</option>
+                    <option value="phd">PhD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Specialization:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="specialization" value="cs"> Computer Science</label>
+                    <label><input type="checkbox" name="specialization" value="it"> Information Technology</label>
+                    <label><input type="checkbox" name="specialization" value="ca"> Computer Architecture</label>
+                    <label><input type="checkbox" name="specialization" value="tc"> Telecommunication</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
