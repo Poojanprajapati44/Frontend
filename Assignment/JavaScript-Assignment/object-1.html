@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let car = {
+            Brand : "Toyota",
+            Model : "Fortuner",
+            Year : 2024
+        }
+        for(var x in car){
+            console.log(x+ "is" +car[x])
+        }
+
+        // console.log("Brand is:"+car.Brand)
+        // console.log("Model is:"+car.Model)
+        // console.log("Year is:"+car.Year)
+        car.Year = 2023
+        car.Color = "Blue"
+
+        console.log("The Year of the car is "+car.Year)
+        console.log("The Color of the car is "+car.Color)
+
+    </script>
+    
+</body>
+</html>

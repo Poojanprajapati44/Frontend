@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    h1{
+        margin-left: 165px;
+        color: red;
+    }
+
+    .clock{
+        height: 200px;
+        width: 400px;
+        display: flex;
+        margin-left: 100px;
+        margin-top: 50px;
+        gap: 20px;
+       
+    }
+
+    .clock div{
+        height: 60px;
+        width: 60px;
+        border: 5px solid black;
+        align-content: center;
+        text-align: center;
+        font-size: 30px;
+       
+    }
+</style>
+<body>
+    <h1>Clock</h1>
+
+    <div class="clock">
+
+        <div id="hour">0</div>
+        <div id="minute">0</div>
+        <div id="second">0</div>
+        
+    </div>
+
+    <script>
+
+        let sec = 0
+        let min = 0
+        let hour = 0
+
+        function clock(){
+            sec ++
+            
+            if(sec == 60){
+                sec = 0
+                min++
+            }
+
+            if (min == 60){
+                min = 0
+                hour++
+            }
+
+            if(hour == 24){
+                hour = 0
+            }
+
+            document.getElementById("second").innerHTML = sec
+            document.getElementById("minute").innerHTML = min
+            document.getElementById("hour").innerHTML = hour
+        }
+
+        setInterval(clock, 1000)
+        clock()
+
+    </script>
+    
+</body>
+</html>

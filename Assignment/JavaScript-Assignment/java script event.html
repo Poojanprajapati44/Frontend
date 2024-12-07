@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <script>
+        let txt = document.createElement("button")
+        console.log(txt);
+        let li = document.createTextNode("Click")
+        txt.appendChild(li)
+        console.log(txt);
+        document.body.insertBefore(txt,document.getElementById("demo"))
+        const add = ()=>{
+            alert("Button clicked....")
+        }
+        txt.addEventListener("click",add)
+       
+    </script>
+</body>
+</html>
