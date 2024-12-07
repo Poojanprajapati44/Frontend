@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+
+        margin: auto;
+        background-color: slateblue;
+        height: 400px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 150px;
+      }
+
+      #text {
+        width: 300px;
+        height: 50px;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid;
+        font-size: 25px;
+        margin-top: 50px;
+      }
+
+      #text::placeholder {
+        padding: 20px;
+      }
+
+      #btn {
+        height: 50px;
+        width: 90px;
+        border-radius: 5px;
+        background-color: orange;
+        font-size: 15px;
+        font-weight: 600;
+        border: 2px solid orange;
+      }
+
+      #item {
+        height: auto;
+        width: 250px;
+        background-color: white;
+        margin-top: 15px;
+        border-radius: 5px;
+        font-weight: 300px;
+        padding: 10px;
+        margin-right: 135px;
+      }
+
+      #itemList li {
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="input">
+        <input type="text" id="text" placeholder="Add New">
+        <button id="btn">Add</button>
+      </div>
+
+      <div id="item">
+        <ul id="itemList"></ul>
+      </div>
+    </div>
+
+    <script>
+      let input = document.getElementById("text");
+      let button = document.getElementById("btn");
+      let itemList = document.getElementById("itemList");
+      let id = 1;
+
+      button.addEventListener("click", () => {                  // EventListener is fire on the click of the button
+        if (input.value != "") {                               // Checking if the input value is empty or not
+
+          itemList.innerHTML += `<li>${input.value}</li> <hr>`; // Updating List in the HTML
+
+          localStorage.setItem(id, input.value);                // Storing the value in the LocalStorage
+
+          id++;                // Updating the id
+
+          input.value = "";                                     //Clear input
+        }
+      });
+    </script>
+  </body>
+</html>
+
