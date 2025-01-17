@@ -40,9 +40,7 @@ const saveData = ()=>{
     disp()
 }
 const disp = ()=>{
-    //first localstorage mese data ko get karna he
     let alldata = JSON.parse(localStorage.getItem('userdata'))
-    //JSON parse means original format me convert kiya
     let txt = ''
     //all data display in table format 
     alldata.map((i)=>{
@@ -63,8 +61,6 @@ const disp = ()=>{
 }
 const delData = (id)=>{
     let alldata = JSON.parse(localStorage.getItem('userdata'))
-    //5  -- 1   3 4 5
-    //id = 2
     let res = alldata.filter((i)=>{
             return i.id != id
     })
